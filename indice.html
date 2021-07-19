@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuestionario</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <div id="cuestionario">
+        <h1 id="title" class="letra">CUENTANOS SOBRE TI</h1>
+        <p id="description" class="letra">Indicanos tus intereses para mandarte información interesante.</p>
+        <form id="survey-form" autocomplete="off" action="" method="POST">
+            <label for="name" id="name-label">Nombre:</label>
+            <input type="text" id="name" placeholder="Escribe tu nombre...">
+            <label for="email" id="email-label">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Escribe tu email...">
+            <label for="number" id="number-label">Edad:</label>
+            <input type="number" id="number" max="99" min="1" placeholder="Escribe tu edad...">
+            <label for="dropdown" id="label-dropdown">País:</label>
+            <select id="dropdown" name="pais">
+            <option value="espana">España</option>
+            <option value="francia">Francia</option>
+            <option value="italia">Italia</option>
+            <option value="portugal">Portugal</option>
+            <option value="inglaterra">Inglaterra</option>
+            <option value="otro">Otro</option>
+          
+        </select>
+            <div id="grupo-opciones">
+                <label id="intereses">Intereses:</label>
+                <p></p>
+
+                <input type="checkbox" id="informatica" value="informatica">
+                <label for="informatica">Informática</label>
+
+                <input type="checkbox" id="programacion" value="programacion">
+                <label for="programacion">Programación</label>
+
+                <input type="checkbox" id="dispositivos" value="dispositivos">
+                <label for="dispositivos">Dispositivos</label>
+
+                <input type="checkbox" id="libros" value="libros">
+                <label for="libros">Libros</label>
+
+                <input type="checkbox" id="series" value="series">
+                <label for="series">Séries</label>
+
+                <input type="checkbox" id="peliculas" value="peliculas">
+                <label for="peliculas">Películas</label>
+
+                <input type="checkbox" id="alimentacion" value="alimentacion">
+                <label for="Alimentacion">Alimentación</label>
+
+                <input type="checkbox" id="viajes" value="viajes">
+                <label for="viajes">Viajes</label>
+
+                <input type="checkbox" id="deporte" value="deporte">
+                <label for="deporte">Deportes</label>
+            </div>
+            <p>Estado actual:</p>
+            <div id="estado-actual">
+                <input type="radio" name="estado" id="trabajando">
+                <label for="trabajando">Trabajando</label>
+
+                <input type="radio" name="estado" id="estudiando">
+                <label for="estudiando">Estudiando</label>
+
+                <input type="radio" name="estado" id="ambas">
+                <label for="ambas">Trabajo y estudio</label>
+
+                <input type="radio" name="estado" id="otros">
+                <label for="otros">Otros</label>
+            </div>
+
+            <label id="comentarios" for="adicionales" size="40px">Comentarios:</label>
+            <textarea id="adicionales" placeholder="Comentarios adicionales..."></textarea>
+            <input type="submit" id="submit" value="ACEPTAR">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
