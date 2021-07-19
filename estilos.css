@@ -33,12 +33,12 @@
  }
  
  #submit {
-     margin: 10px 0 10px auto;
+     margin: 10px 10px 10px auto;
      border: 1px solid #ddd;
      background-color: #00f;
      color: #fff;
      font-size: 1.1em;
-     width: 220px;
+     width: 200px;
  }
  
  #submit:hover {
