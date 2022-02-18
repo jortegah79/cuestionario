@@ -1,88 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>cuestionario</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <div id="cuestionario">
-        <h1 id="title" class="letra">CUENTANOS SOBRE TI</h1>
-        <p id="description" class="letra">Indicanos tus intereses para mandarte información interesante.</p>
-        <form id="survey-form" autocomplete="off" action="" method="POST">
-            <label for="name" id="name-label">Nombre:</label>
-            <input type="text" id="name" required placeholder="Escribe tu nombre...">
-            <label for="email" id="email-label">Correo electrónico:</label>
-            <input type="email" id="email" required placeholder="Escribe tu email...">
-            <label for="number" id="number-label">Edad:</label>
-            <input type="number" id="number" max="99" min="1" placeholder="Escribe tu edad...">
-            <label for="dropdown" id="label-dropdown">País:</label>
-            <select id="dropdown" name="pais">
-          <option value="espana">España</option>
-          <option value="francia">Francia</option>
-          <option value="italia">Italia</option>
-          <option value="portugal">Portugal</option>
-          <option value="inglaterra">Inglaterra</option>
-          <option value="otro">Otro</option>
-  
-        </select>
+        <h1 class="letra" id="title">CUENTANOS SOBRE TI</h1>
+        <p class="letra" id="description">
+            Indicanos tus intereses para mandarte información interesante.
+        </p>
+        <form action autocomplete="off" id="survey-form" method="POST">
+            <div class="datos_personales">
+                <label for="name" id="name-label">Nombre:</label>
+                <input id="name"
+                       placeholder="Escribe tu nombre..."
+                       required
+                       type="text" />
+                <label for="email" id="email-label">Correo electrónico:</label>
+                <input id="email"
+                       placeholder="Escribe tu email..."
+                       required
+                       type="email" />
+                <label for="number" id="number-label">Edad:</label>
+                <input id="number"
+                       max="99"
+                       min="1"
+                       placeholder="Escribe tu edad..."
+                       type="number" />
+                <label for="dropdown" id="label-dropdown">País:</label>
+                <select id="dropdown" name="pais">
+                    <option value="espana">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="italia">Italia</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="inglaterra">Inglaterra</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
             <div id="grupo-opciones">
-                <label id="intereses">Intereses:</label>
-                <p></p>
+                <div>
+                    <h3>Intereses:</h3>
+                </div>
+                <div class="intereses">
+                    <input id="informatica"
+                           type="checkbox"
+                           value="informatica" />
+                    <label for="informatica">Informática</label>
 
-                <input type="checkbox" id="informatica" value="informatica">
-                <label for="informatica">Informática</label>
+                    <input id="programacion"
+                           type="checkbox"
+                           value="programacion" />
+                    <label for="programacion">Programación</label>
 
-                <input type="checkbox" id="programacion" value="programacion">
-                <label for="programacion">Programación</label>
+                    <input id="dispositivos"
+                           type="checkbox"
+                           value="dispositivos" />
+                    <label for="dispositivos">Dispositivos</label>
 
-                <input type="checkbox" id="dispositivos" value="dispositivos">
-                <label for="dispositivos">Dispositivos</label>
+                    <input id="libros" type="checkbox" value="libros" />
+                    <label for="libros">Libros</label>
 
-                <input type="checkbox" id="libros" value="libros">
-                <label for="libros">Libros</label>
+                    <input id="peliculas" type="checkbox" value="peliculas" />
+                    <label for="peliculas">Películas .</label>
 
-                <input type="checkbox" id="series" value="series">
-                <label for="series">Séries</label>
+                    <input id="series" type="checkbox" value="series" />
+                    <label for="series">Séries</label>
 
-                <input type="checkbox" id="peliculas" value="peliculas">
-                <label for="peliculas">Películas</label>
+                    <input id="alimentacion"
+                           type="checkbox"
+                           value="alimentacion" />
+                    <label for="Alimentacion">Alimentación</label>
 
-                <input type="checkbox" id="alimentacion" value="alimentacion">
-                <label for="Alimentacion">Alimentación</label>
+                    <input id="viajes" type="checkbox" value="viajes" />
+                    <label for="viajes">Viajes</label>
 
-                <input type="checkbox" id="viajes" value="viajes">
-                <label for="viajes">Viajes</label>
-
-                <input type="checkbox" id="deporte" value="deporte">
-                <label for="deporte">Deportes</label>
+                    <input id="deporte" type="checkbox" value="deporte" />
+                    <label for="deporte">Deportes</label>
+                </div>
             </div>
             <p>Estado actual:</p>
-            <div id="estado-actual">
-                <input type="radio" name="estado" id="estado-1" value="trabajando">
+            <div id="estado-actual" class="estados">
+                <input id="estado-1"
+                       name="estado"
+                       type="radio"
+                       value="trabajando" />
                 <label for="trabajando">Trabajando</label>
 
-                <input type="radio" name="estado" id="estado-2" value="estudiando">
+                <input id="estado-2"
+                       name="estado"
+                       type="radio"
+                       value="estudiando" />
                 <label for="estudiando">Estudiando</label>
+                
+                <input id="estado-3" name="estado" type="radio" value="ambas" />
+                <label for="ambas">Ambas</label>
 
-                <input type="radio" name="estado" id="estado-3" value="ambas">
-                <label for="ambas">Trabajo y estudio</label>
-
-                <input type="radio" name="estado" id="estado-4" value="otros">
+                <input id="estado-4" name="estado" type="radio" value="otros" />
                 <label for="otros">Otros</label>
             </div>
-
-            <label id="comentarios" for="adicionales" size="40px">Comentarios:</label>
-            <textarea id="adicionales" placeholder="Comentarios adicionales..."></textarea>
-            <input type="submit" id="submit" value="ACEPTAR">
-
+            <div>
+                <h3>Comentarios:</h3>
+                <textarea id="adicionales" class="adicional"
+                          placeholder="Comentarios adicionales...">
+                </textarea>
+            </div>           
+            <button id="submit" type="submit">Aceptar</button>
         </form>
     </div>
-
 </body>
-
 </html>
